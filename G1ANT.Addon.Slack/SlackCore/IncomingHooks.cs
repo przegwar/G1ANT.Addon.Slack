@@ -31,13 +31,8 @@ namespace G1ANT.Addon.Slack
                 }
             };
 
-            host = new NancyHost(config, new Uri("http://localhost:8080"));
-            //{
+            host = new NancyHost(config, new Uri(hostUrl));
                 host.Start();
-                
-                //Console.ReadKey();
-                
-            //}
         }
 
         public static void StopHost()
